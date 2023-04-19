@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e6eff6;
+    font-family: "karla";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.card{
+    max-width: 680px;
+    margin: 5%;
+    background-color: aqua;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border-radius: 8px;
+}
+
+.block1{
+    grid-column: 1/3;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+.block1 .texte1{
+    margin: 40px;
+}
+.block1 h1{
+    color: hsl(179, 62%, 43%) ;
+    font-size: 1.5em;
+
+}
+.block1 h2{
+    font-size: 1em;
+    color: hsl(71, 73%, 54%);
+    margin-top: 20px;
+}
+.block1 p{
+    color: hsl(218, 22%, 67%);
+    margin-top: 20px;
+}
+.block2{
+    color: #fff;
+    grid-row: 2;
+    background-color: #2bb3b1;
+    border-radius: 0 0 0 8px;
+}
+.block2 .texte2{
+    margin: 40px;
+}
+.texte2 h1{
+    font-size: 1.2em;
+}
+.texte2 p span{
+    color: #fff;
+    font-size: 2em;
+    margin-right: 10px;
+}
+.texte2 .p1{
+    margin-top: 20px;
+    color: hsl(204, 43%, 93%);   
+}
+.texte2 .p2{
+    margin-top: 20px;
+    font-size: .9em;
+}
+.block2 .button{
+    margin-top: 30px;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.block3{
+    color: #fff;
+    grid-row: 2;
+    background-color: #4abebd;
+    border-radius: 0 0 8px 0;
+}
+.block3 .texte3{
+    margin:40px;
+}
+.texte3 h1{
+    font-size: 1.2em;
+}
+.texte3 p{
+font-size: .9em;
+margin-right: 50px;
+}
+footer{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+}
+@media screen and (max-width: 375px) {
+    .card{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .block3{
+    grid-row: 3;
+    }
+    .block1 .texte1{
+        margin: 20px;
+    }
+   .block2 .texte2{margin:20px}
+.block3 .texte3{margin: 20px;}
+    .block1 h1{
+        font-size: 1em;
+    }
+    .block1 h2{
+        font-size: 0.8em;
+    }
+    .block1 p{
+        font-size: 0.7em;
+        line-height: 25px;
+    }
+    .block2 h1{
+        font-size: 1em;
+    }
+    .block2 .p2{
+        font-size: 0.7em;
+    }
+    .texte3 h1{
+        font-size: 1em;}
+    .texte3 p{
+        font-size: 0.7em;
+        line-height: 25px;
+    }
+    
+}
